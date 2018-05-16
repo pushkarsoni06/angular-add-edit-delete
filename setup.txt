@@ -1,0 +1,44 @@
+1. What is the difference between Node.js runttime, npm package manager, online document shorcut, Add to path -> 1 Node.js and NPM and 2. npm modules
+2. npm install and node install express
+
+
+Install Postman
+
+express
+nodemon --- to refresh browser automatically
+body-parser
+
+http://blog.teamtreehouse.com/install-node-js-npm-windows
+
+https://docs.npmjs.com/getting-started/installing-node
+
+
+npm init	
+
+npm install -g grunt-cli
+
+npm install karma --save-dev
+npm install karma-jasmine --save-dev
+npm install karma-chrome-launcher --save-dev
+npm install jasmine-core --save-dev
+npm install grunt --save-dev
+npm install angular --save-dev
+
+Install Server:-
+npm install grunt-express-server --save-dev
+
+
+karma init
+
+To run test cases:-
+karma start karma.config.js
+
+
+
+npm install grunt-express --save-dev
+npm install grunt-contrib-watch --save-dev
+
+
+"grunt-express": "^1.4.1",
+
+https://www.npmjs.com/package/grunt-express
