@@ -1,6 +1,5 @@
-1. What is the difference between Node.js runttime, npm package manager, online document shorcut, Add to path -> 1 Node.js and NPM and 2. npm modules
-2. npm install and node install express
-
+Step Steps:-
+=================
 
 Install Postman
 
