@@ -1,0 +1,40 @@
+
+<h2>Contact List</h2>  
+ 
+<div class="alert alert-success"  ng-if="success">
+  <strong>Success!</strong> {{successMessage}}
+</div>
+
+ <div class="alert alert-info" ng-if="list.length<=0">
+	  <strong>Info!</strong> No Record Found
+ </div>
+
+  <table class="table table-striped" ng-if="list.length>0">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+		<th>Phone Number</th>
+		<th>Status</th>
+		<th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in list track by $index">
+        <td>{{item.fname}}</td>
+        <td>{{item.lname}}</td>
+        <td>{{item.email}}</td>
+		<td>{{item.phonenumber}}</td>
+		<td>{{item.status}}</td>
+		<td>
+			<a ui-sref="edit({id: $index})">
+			  <span class="glyphicon glyphicon-edit"></span>
+			</a>
+			<a ng-click="delete($index)">
+			  <span class="glyphicon glyphicon-trash"></span>
+			</a>
+		</td>
+      </tr>
+    </tbody>
+  </table>
