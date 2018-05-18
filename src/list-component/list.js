@@ -80,12 +80,12 @@ app.controller('addEditController',function($scope, $rootScope,$state,$statePara
 	}
 	
 	$scope.disableSubmitButton = function(){
-		return $scope.contactForm.fname.$invalid || $scope.contactForm.lname.$invalid || $scope.contactForm.email.$invalid || $scope.contactForm.phonenumber.$invalid;
+		var valid = $scope.contactForm.fname.$invalid || $scope.contactForm.lname.$invalid || $scope.contactForm.email.$invalid || $scope.contactForm.phonenumber.$invalid;
+		return valid;
 	};
 	
 	this.$onInit = function(){
 		clearFormData();
-		$scope.formModel.status = 'Active';
 		
 		recordIdexToUpddate = $stateParams.id;
 		if(recordIdexToUpddate) {
